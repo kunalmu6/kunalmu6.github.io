@@ -1,0 +1,56 @@
+<html>
+<title>season 3</title>
+<head>
+Powered by KUNAL
+</head>
+<body bgcolor="#888888">
+<center>
+<h1> CALCULATOR</h1>
+a=
+<input type="number" id="a"></input>
+<br>
+b=
+<input type="number" id="b"></input>
+<br>
+<button onclick="ad()">add</button>
+<button onclick="su()">substract</button>
+<button onclick="mul()">multiply</button>
+<button onclick="div()">division</button>
+<button onclick="pow()">power</button>
+<br>
+Result<div id="ans"></div>
+</center>
+<script>
+function ad()
+{
+var a= parseInt(document.getElementById("a").value);
+var b= parseInt(document.getElementById("b").value);
+document.getElementById("ans").innerHTML = a+b;
+}
+function su()
+{
+var a= document.getElementById("a").value;
+var b= document.getElementById("b").value;
+document.getElementById("ans").innerHTML = a-b;
+}
+function mul()
+{
+var a= document.getElementById("a").value;
+var b= document.getElementById("b").value;
+document.getElementById("ans").innerHTML = a*b;
+}
+function div()
+{
+var a= document.getElementById("a").value;
+var b= document.getElementById("b").value;
+document.getElementById("ans").innerHTML = a/b;
+}
+function pow()
+{
+var a= document.getElementById("a").value;
+var b= document.getElementById("b").value;
+document.getElementById("ans").innerHTML = Math.pow(a,b);
+}
+</script>
+</body>
+</head>
